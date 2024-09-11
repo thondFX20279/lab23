@@ -58,7 +58,7 @@ class App extends Component {
   loginHandler = (event, authData) => {
     event.preventDefault();
     this.setState({ authLoading: true });
-    fetch("http://localhost:8080/auth/login", {
+    fetch("https://lab23b3-5.onrender.com/auth/login", {
       headers: { "Content-Type": "application/json" },
       method: "POST",
       body: JSON.stringify({
@@ -105,7 +105,7 @@ class App extends Component {
   signupHandler = (event, authData) => {
     event.preventDefault();
     this.setState({ authLoading: true });
-    fetch("http://localhost:8080/auth/signup", {
+    fetch("https://lab23b3-5.onrender.com/auth/signup", {
       headers: { "Content-Type": "application/json" },
       method: "PUT",
       body: JSON.stringify({
